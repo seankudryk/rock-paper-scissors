@@ -20,6 +20,17 @@ function getComputerChoice() {
 }
 
 startButton.addEventListener("click", function () {
-        startButton.style.color = "red";
-        let playerInput = prompt("Rock, Paper, or Scissors");
+        let playerInput = prompt("Rock, Paper, or Scissors? (Please enter choice in lowercase, ie: rock)");
+        
+
+        if (playerInput !== "rock" && playerInput !== "paper" && playerInput !== "scissors") {
+            alert("Please enter either 'rock', 'paper', or 'scissors'");
+            return;
+        } else if (playerInput === "rock") {
+            alert("You entered rock!");
+        } else if (playerInput === "paper") {
+            alert("You entered paper!");
+        } else {
+            alert("You entered scissors!");
+        }
 });
