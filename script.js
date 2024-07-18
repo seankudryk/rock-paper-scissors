@@ -74,5 +74,3 @@ function playGame(rounds) {
         console.log("YOU'RE A LOSER, THE COMPUTER WON THE ENTIRE MATCH YOU LOSER!!!");
     }
 }
-
-playGame(10);
