@@ -1,5 +1,23 @@
+let button = document.querySelector("rock-button");
+
 let humanScore = 0;
 let computerScore = 0;
+
+button.addEventListener("click", (event) => {
+    let target = event.target;
+
+    switch(target.id) {
+        case "rock-button":
+            console.log("rock-button");
+            break;
+        case "paper-button":
+            console.log("paper-button");
+            break;
+        case "scissors-button":
+            console.log("scissors-button");
+            break;
+    }
+})
 
 function getComputerChoice() {
     let roll = Math.floor(Math.random() * 3);
