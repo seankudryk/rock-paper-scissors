@@ -1,4 +1,3 @@
-let button = document.querySelector("#button");
 let container = document.querySelector("#container");
 
 let humanScore = 0;
@@ -7,17 +6,21 @@ let computerScore = 0;
 container.addEventListener("click", (event) => {
     let target = event.target;
 
-    switch(target.id) {
-        case "rock-button":
-            console.log("rock-button");
-            break;
-        case "paper-button":
-            console.log("paper-button");
-            break;
-        case "scissors-button":
-            console.log("scissors-button");
-            break;
+    function getHumanChoice() {
+        switch(target.id) {
+            case "rock-button":
+                console.log("rock-button");
+                return "rock";
+            case "paper-button":
+                console.log("paper-button");
+                return "paper";
+            case "scissors-button":
+                console.log("scissors-button");
+                return "scissors";
+        }
     }
+
+    playRound(getComputerChoice(), getHumanChoice());
 })
 
 function getComputerChoice() {
@@ -32,7 +35,7 @@ function getComputerChoice() {
         play = "scissors";
     }
     return play;
-}
+} 
 
 function getHumanChoice() {
     let playerInput = prompt("Rock, Paper, or Scissors?");
@@ -40,12 +43,6 @@ function getHumanChoice() {
 }
 
 function playRound(computerChoice, humanChoice) {
-    if (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") {
-        alert("Please enter either 'rock', 'paper', or 'scissors'");
-        console.log("Invalid Input: Please enter either 'rock', 'paper', or 'scissors'");
-        return;
-    }
-
     if (humanChoice === "rock") {
         if (computerChoice === "paper") {
             computerScore += 1;
