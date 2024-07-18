@@ -1,9 +1,10 @@
-let button = document.querySelector("rock-button");
+let button = document.querySelector("#button");
+let container = document.querySelector("#container");
 
 let humanScore = 0;
 let computerScore = 0;
 
-button.addEventListener("click", (event) => {
+container.addEventListener("click", (event) => {
     let target = event.target;
 
     switch(target.id) {
