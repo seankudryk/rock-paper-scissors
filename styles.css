@@ -1,4 +1,33 @@
 * {
     margin: 0;
     padding: 0;
+    margin: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 80%;
+    height: 100%;
+    background-color: teal;
+    padding: 50px 0px;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+    margin: 0;
+}
+
+#container {
+    margin: 0;
 }
