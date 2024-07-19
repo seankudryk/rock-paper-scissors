@@ -24,8 +24,25 @@
 #score-container {
     display: flex;
     justify-content: space-evenly;
-    background-color: red;
     margin: 0;
+}
+
+.score-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    filter:drop-shadow(2px 2px 2px black);
+}
+
+.score-card span {
+    font-size: 50px;
 }
 
 #container {
