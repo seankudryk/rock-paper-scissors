@@ -7,6 +7,7 @@
 .header-container {
     display: flex;
     justify-content: center;
+    padding: 25px 0px;
 }
 
 .main-container {
@@ -42,9 +43,30 @@
 }
 
 .score-card span {
-    font-size: 50px;
+    font-size: 70px;
 }
 
-#container {
-    margin: 0;
+.score-card label {
+    font-size: 25px;    
+    border-bottom: 2px solid black;
 }
+
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    margin: 10px;
+}
+
+button {
+    width: 100px;
+    height: 75px;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: gray;
+    color: white;
+}
+
